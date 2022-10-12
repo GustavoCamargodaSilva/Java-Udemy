@@ -17,5 +17,7 @@ public class EntradaDeDados {
 
         char d = scan.next().charAt(0); // entrada de dados para pegar a primeira string
         System.out.println(d);
+
+        scan.close();
     }
 }
