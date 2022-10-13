@@ -12,5 +12,7 @@ public class exercicioCondicional1 {
         } else {
             System.out.println("NAO NEGATIVO");
         }
+
+        scan.close();
     }
 }
