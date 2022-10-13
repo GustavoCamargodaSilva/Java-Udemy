@@ -38,5 +38,6 @@ public class exerciciosCondicionais5 {
 
         System.out.printf("O Total a pagar é: %.2f%n", total);
 
+        scan.close();
     }
 }
