@@ -13,5 +13,6 @@ public class exercicioCondicional2 {
             System.out.println("Impar");
         }
 
+        scan.close();
     }
 }
