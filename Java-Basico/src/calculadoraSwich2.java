@@ -8,7 +8,6 @@ public class calculadoraSwich2 {
 
         double num1, num2, resultado;
         resultado = 0;
-        int contador = 0;
 
         do {
 
@@ -38,9 +37,12 @@ public class calculadoraSwich2 {
                     resultado = num1 * num2;
                     System.out.println(resultado);
                     break;
+                default:
+                    System.out.println("Operação inválida");
             }
         } while (resultado > 0);
-        contador++;
+
+        scan.close();
 
     }
 }
