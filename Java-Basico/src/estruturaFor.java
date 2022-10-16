@@ -1,19 +1,19 @@
 import java.util.Scanner;
 
-public class repeticaoWhile {
+public class estruturaFor {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        int x = scan.nextInt();
         int soma = 0;
 
-        while (x != 0) {
-            soma += x;
-            x = scan.nextInt();
+        for (int i = 0; i < N; i++) {
+            int x = scan.nextInt();
+            soma = soma + x;
         }
 
         System.out.println(soma);
 
         scan.close();
+
     }
 }
