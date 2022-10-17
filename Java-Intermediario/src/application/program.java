@@ -10,12 +10,12 @@ public class program {
         Scanner scan = new Scanner(System.in);
         Locale.setDefault(Locale.US);
 
-        Triangle x, y;
+        Triangle x, y; // Chamando o metedo Triangle e criando o objeto
         x = new Triangle();
         y = new Triangle();
 
         System.out.println("Enter the measures of thiangle X: ");
-        x.a = scan.nextDouble();
+        x.a = scan.nextDouble(); // solicitando os valores e guardando dentro do objeto Tringle
         x.b = scan.nextDouble();
         x.c = scan.nextDouble();
         System.out.println("Enter the measures of thiangle Y: ");
@@ -23,17 +23,14 @@ public class program {
         y.b = scan.nextDouble();
         y.c = scan.nextDouble();
 
-        double p = (x.a + x.b + x.c) / 2.0;
-        double areaX = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
+        double areaX = x.area(); // Chamando metedo de calculo area para denominar valor
+        double areaY = y.area();
 
-        p = (y.a + y.b + y.c) / 2.0;
-        double areaY = Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
-
-        System.out.printf("Area : %.4f%n", areaX);
+        System.out.printf("Area : %.4f%n", areaX); // Imprimindo os valores de cada triangulo
         System.out.printf("Area : %.4f%n", areaY);
 
         if (areaX > areaY) {
-            System.out.println("Larger area X");
+            System.out.println("Larger area X"); // Fazendo a comparacao para chegar no maior triangulo
         } else {
             System.out.println("Larger area Y");
         }
