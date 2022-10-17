@@ -34,5 +34,7 @@ public class estruturaSwitchCase {
                 break;
         }
         System.out.println(dia);
+
+        scan.close();
     }
 }

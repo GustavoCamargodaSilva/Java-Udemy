@@ -5,6 +5,7 @@ public class estruturaFor {
         Scanner scan = new Scanner(System.in);
 
         int soma = 0;
+        int N = 0;
 
         for (int i = 0; i < N; i++) {
             int x = scan.nextInt();

@@ -1,7 +1,4 @@
 import java.util.Scanner;
-
-import javax.print.attribute.SupportedValuesAttribute;
-
 import java.util.Locale;
 
 public class doWhile {

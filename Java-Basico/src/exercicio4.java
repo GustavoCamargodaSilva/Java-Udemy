@@ -11,9 +11,6 @@ public class exercicio4 {
         System.out.println("Digite base1:");
         double base = scan.nextInt();
 
-        System.out.println("Digite base2:");
-        double base2 = scan.nextInt();
-
         System.out.println("Digite a altura:");
         double altura = scan.nextDouble();
 
