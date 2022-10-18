@@ -26,5 +26,7 @@ public class media {
         aluno.nota3 = scan.nextDouble();
 
         aluno.comparation();
+
+        scan.close();
     }
 }
