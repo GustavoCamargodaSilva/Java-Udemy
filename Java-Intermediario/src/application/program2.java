@@ -4,6 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 import entities.products2;
 
+//programa com sobrecarga
 public class program2 {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
@@ -16,17 +17,14 @@ public class program2 {
         System.out.print("Price: ");
         double price = sc.nextDouble();
 
-        System.out.print("Quantity in stock: ");
-        int quantity = sc.nextInt();
-
-        products2 products2 = new products2(name, price, quantity);
+        products2 products2 = new products2(name, price);
 
         System.out.println();
         System.out.println("Product data: " + products2);
 
         System.out.println();
         System.out.print("Enter the number of products to be added in stock: ");
-        quantity = sc.nextInt();
+        int quantity = sc.nextInt();
         products2.addProducts(quantity);
 
         System.out.println();

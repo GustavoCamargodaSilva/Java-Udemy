@@ -7,9 +7,14 @@ public class products2 {
     public int quantity;
 
     public products2(String name, double price, int quantity) {
-        this.name = name;
+        this.name = name; // construtor
         this.price = price;
         this.quantity = quantity;
+    }
+
+    public products2(String name, double price) {
+        this.name = name; // construtor sobrecarga
+        this.price = price;
     }
 
     public double totalValueInStock() {
