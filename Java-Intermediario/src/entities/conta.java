@@ -11,16 +11,17 @@ public class conta {
         this.saldo = saldo;
     }
 
+    public conta(String titular, int conta) {
+        this.conta = conta;
+        this.titular = titular;
+    }
+
     public void setTitular(String titular) {
         this.titular = titular;
     }
 
     public String getTitular() {
         return this.titular;
-    }
-
-    public void setConta(int conta) {
-        this.conta = conta;
     }
 
     public int getConta() {
@@ -38,4 +39,10 @@ public class conta {
     public void saqueSaldo(double saldo) {
         this.saldo -= saldo;
     }
+
+    public String toString() {
+        return "Account data: " + getTitular() + ", " + "Conta: " + getConta()
+                + ", " + "Saldo: R$ " + String.format("%.2f", getSaldo());
+    }
+
 }
