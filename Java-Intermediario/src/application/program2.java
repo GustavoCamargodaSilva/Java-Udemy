@@ -2,6 +2,7 @@ package application;
 
 import java.util.Locale;
 import java.util.Scanner;
+
 import entities.products2;
 
 //programa com sobrecarga
@@ -18,6 +19,9 @@ public class program2 {
         double price = sc.nextDouble();
 
         products2 products2 = new products2(name, price);
+
+        products2.setName("Computer");
+        System.out.println("Updated name: " + products2.getName());
 
         System.out.println();
         System.out.println("Product data: " + products2);

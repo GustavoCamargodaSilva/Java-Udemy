@@ -2,9 +2,9 @@ package entities;
 
 public class products2 {
 
-    public String name;
-    public double price;
-    public int quantity;
+    private String name;
+    private double price;
+    private int quantity;
 
     public products2(String name, double price, int quantity) {
         this.name = name; // construtor
@@ -15,6 +15,26 @@ public class products2 {
     public products2(String name, double price) {
         this.name = name; // construtor sobrecarga
         this.price = price;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getPrice() {
+        return price; // acessar o preço do produto
+    }
+
+    public void setPrice(double price) {
+        this.price = price; // Alterar o preço do produto
     }
 
     public double totalValueInStock() {
