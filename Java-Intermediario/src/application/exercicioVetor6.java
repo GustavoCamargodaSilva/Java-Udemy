@@ -36,5 +36,7 @@ public class exercicioVetor6 {
             System.out.printf("%d\n", vetorSoma[i]);
         }
 
+        scan.close();
+
     }
 }
