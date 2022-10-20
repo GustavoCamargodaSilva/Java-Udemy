@@ -22,5 +22,6 @@ public class dolar {
 
         System.out.printf("O Preço que você vai pagar em Real vai ser: $ %.2f ", converter.calc());
 
+        scan.close();
     }
 }
