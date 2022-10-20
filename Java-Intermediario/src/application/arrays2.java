@@ -10,8 +10,6 @@ public class arrays2 {
         Locale.setDefault(Locale.US);
         Scanner scan = new Scanner(System.in);
 
-        int n = scan.nextInt();
-
         product3[] vect = new product3[3]; // indicando que o vect tem 3 posições
 
         for (int i = 0; i < vect.length; i++) { // iniciando o for para repetição
