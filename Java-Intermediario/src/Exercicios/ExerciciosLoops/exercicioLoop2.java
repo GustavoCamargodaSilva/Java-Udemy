@@ -38,5 +38,7 @@ public class exercicioLoop2 {
         System.out.println();
         System.out.print("O Maior número é: " + maior); // imprimir o maior numero digitado no laço
 
+        scan.close();
+
     }
 }
