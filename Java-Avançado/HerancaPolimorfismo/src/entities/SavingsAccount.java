@@ -27,6 +27,7 @@ public  class SavingsAccount extends Account{ //Usado para fazer a herança do m
 	@Override
 	public final void withDraw(double amount) { //Subscrevendo o metodo para nao descontar os
 		balance -= amount; 					// 5 reais, se usa @Override para o compilador entender
-	} //Colocado final para evitar que um metodo sobreposto
-	  //Seja sobreposto novamente, pois pode gerar inconsistencia no sistema.
+	} 
+	//Colocado final para evitar que um metodo sobreposto
+	//Seja sobreposto novamente, pois pode gerar inconsistencia no sistema.
 }
