@@ -7,6 +7,16 @@ public class Program {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
+		method2();
+		
+		System.out.println("End of the Program");
+		
+		sc.close();
+	}
+
+	public static void method2(){
+		Scanner sc = new Scanner(System.in);
+		
 		try {
 			String [] vect = sc.nextLine().split(" ");
 			int position = sc.nextInt();
